@@ -1,0 +1,15 @@
+doctype html
+head
+  title #{coaster.coasterName} #{id}
+  link(rel="stylesheet" type="text/css" href="css/reset.css")
+  link(href="https://fonts.googleapis.com/css?family=Kalam:700" rel="stylesheet")
+  link(rel="stylesheet" type="text/css" href="/css/my-styles.css")
+body
+  h1 #{coaster.coasterName}
+  img(src='/images/' + coaster.image)
+  p Manufacturer: 
+  p Park: #{coaster.park}
+  br
+  h2 Description:
+  p #{coaster.Description}
+  a(href="/") Home

@@ -1,0 +1,13 @@
+html
+head
+  title home
+  link(rel="stylesheet" type="text/css" href="css/reset.css")
+  link(href="https://fonts.googleapis.com/css?family=Kalam:700" rel="stylesheet")
+  link(rel="stylesheet" type="text/css" href="css/my-styles.css")
+body
+  h1 10 Cool Roller Coasters in the United States
+  p(id="marginMe") Ever wanted to learn about interesting or scary roller coasters? Click the links below to discover what they are all about!
+  ul
+    each coasters in coaster
+      li
+        a(href="/coaster/" + coasters.id) #{coasters.coasterName}

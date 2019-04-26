@@ -1,0 +1,18 @@
+doctype html
+head
+  title Park Price Quote
+  link(rel="stylesheet" type="text/css" href="css/reset.css")
+  link(href="https://fonts.googleapis.com/css?family=Kalam:700" rel="stylesheet")
+  link(rel="stylesheet" type="text/css" href="css/my-styles.css")
+  script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+  script(src="/js/ajax.js")
+body
+  h1 Interested in visiting any parks? Fill out the form to get a park ticket quote!
+  form(action="/quote" method="POST")
+    label Number of Children:
+      input(id="a" type="number" name="a")
+    label Number of Adults:
+      input(id="b" type="number" name="b")
+    button(id="submit") Find Your Quote!
+  p(id="price")
+  a(href="/") Home
